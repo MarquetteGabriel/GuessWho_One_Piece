@@ -6,7 +6,11 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<!-- Déclaration de l'application -->
-	<application android:allowBackup="true" android:icon="@mipmap/logo_guesswho_one_piece" android:supportsRtl="true" android:label="GuessWho One Piece" android:networkSecurityConfig="@xml/network_security_config">
+	<application 
+		android:allowBackup="true" 
+		android:icon="@mipmap/logo_guesswho_one_piece" 
+		android:supportsRtl="true" android:label="GuessWho One Piece" 
+		android:networkSecurityConfig="@xml/network_security_config">
 		<!-- Déclaration de la configuration WebView -->
 		<!-- Le WebView sera configuré dans le code C# Blazor/Android -->
 	</application>

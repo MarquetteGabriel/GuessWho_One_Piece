@@ -33,7 +33,7 @@
         <MauiIcon Include="Resources\AppIcon\logo_guesswho_one_piece.svg" />
 
         <!-- Splash Screen -->
-        <MauiSplashScreen Include="Resources\Splash\disc0555.jpg" />
+        <MauiSplashScreen Include="Resources\Splash\disc0555.jpg" BaseSize="3280x4877" Resize="false" />
 
         <!-- Images -->
         <MauiImage Include="Resources\Images\*" />
