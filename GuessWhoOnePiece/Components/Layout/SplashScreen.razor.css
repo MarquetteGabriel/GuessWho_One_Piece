@@ -35,3 +35,16 @@
     justify-content: center;
     position: relative;
 }
+
+.progress-bar {
+    background-color: #00000000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    place-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

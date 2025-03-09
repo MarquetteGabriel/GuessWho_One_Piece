@@ -523,7 +523,9 @@ namespace GuessWhoOnePiece.Tests.DataBase
         public async Task Chappe()
         {
             var character = "Chappe";
-            var characterLink = ControlRoom.SetCharacterLink(character); var mockFileService = new Mock<IFileServiceReader>(); mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
+            var characterLink = ControlRoom.SetCharacterLink(character); 
+            var mockFileService = new Mock<IFileServiceReader>(); 
+            mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
             var result = await controlRoom.DataForCharacter(characterLink, character, mockFileService.Object);
 
             Skip.If(result == null, "Character not found");
@@ -541,7 +543,9 @@ namespace GuessWhoOnePiece.Tests.DataBase
         public async Task Charlos()
         {
             var character = "Charlos";
-            var characterLink = ControlRoom.SetCharacterLink(character); var mockFileService = new Mock<IFileServiceReader>(); mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
+            var characterLink = ControlRoom.SetCharacterLink(character); 
+            var mockFileService = new Mock<IFileServiceReader>(); 
+            mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
             var result = await controlRoom.DataForCharacter(characterLink, character, mockFileService.Object);
 
             Skip.If(result == null, "Character not found");
@@ -559,7 +563,9 @@ namespace GuessWhoOnePiece.Tests.DataBase
         public async Task Charlotte_Agar_agar()
         {
             var character = "Charlotte Agar-agar";
-            var characterLink = ControlRoom.SetCharacterLink(character); var mockFileService = new Mock<IFileServiceReader>(); mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
+            var characterLink = ControlRoom.SetCharacterLink(character); 
+            var mockFileService = new Mock<IFileServiceReader>(); 
+            mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
             var result = await controlRoom.DataForCharacter(characterLink, character, mockFileService.Object);
 
             Skip.If(result == null, "Character not found");
