@@ -19,7 +19,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
         /// <returns>The extracted crew.</returns>
         internal static string ExtractCrew(HtmlNode text, string characterName)
         {
-            if (ManageSpecificCases(text, characterName) is { } specifiCases)
+            if (ManageSpecificCases(characterName) is { } specifiCases)
                 return specifiCases;
 
             string crew = GetCrewMapping(ExtractPatternCrew(text));
@@ -37,7 +37,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
             return Crew.Citizen;
         }
 
-        private static string? ManageSpecificCases(HtmlNode text, string characterName)
+        private static string? ManageSpecificCases(string characterName)
         {
             if (characterName.Equals("Vergo", StringComparison.Ordinal) || characterName.Equals("Senor Pink", StringComparison.Ordinal))
                 return Crew.DoflamingoCrew;
