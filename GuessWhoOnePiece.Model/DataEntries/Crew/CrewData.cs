@@ -19,6 +19,26 @@ namespace GuessWhoOnePiece.Model.DataEntries
         /// <returns>The extracted crew.</returns>
         internal static string ExtractCrew(HtmlNode text, string characterName)
         {
+            if (ManageSpecificCases(text, characterName) is { } specifiCases)
+                return specifiCases;
+
+            string crew = GetCrewMapping(ExtractPatternCrew(text));
+
+            if (crew.StartsWith("CP", StringComparison.OrdinalIgnoreCase))
+                return Crew.CipherPol;
+
+            if (PirateTypeList.Any(crew.Contains))
+                return crew;
+            if (NavyTypeList.Any(crew.Contains))
+                return crew;
+            if (RevoTypeList.Any(crew.Contains))
+                return Crew.RevolutionaryArmy;
+
+            return Crew.Citizen;
+        }
+
+        private static string? ManageSpecificCases(HtmlNode text, string characterName)
+        {
             if (characterName.Equals("Vergo", StringComparison.Ordinal) || characterName.Equals("Senor Pink", StringComparison.Ordinal))
                 return Crew.DoflamingoCrew;
             if (characterName.Equals("Sanjuan Wolf", StringComparison.Ordinal))
@@ -34,19 +54,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
             if (characterName.Equals("Barbe Brune", StringComparison.Ordinal))
                 return Crew.DoflamingoCrew;
 
-            string crew = GetCrewMapping(ExtractPatternCrew(text));
-
-            if (crew.StartsWith("CP", StringComparison.OrdinalIgnoreCase))
-                return Crew.CipherPol;
-
-            if (PirateTypeList.Any(crew.Contains))
-                return crew;
-            if (NavyTypeList.Any(crew.Contains))
-                return crew;
-            if (RevoTypeList.Any(crew.Contains))
-                return Crew.RevolutionaryArmy;
-
-            return Crew.Citizen;
+            return null;
         }
 
         /// <summary>Extract crew from text.</summary>

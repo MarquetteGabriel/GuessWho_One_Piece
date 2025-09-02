@@ -58,6 +58,8 @@ namespace GuessWhoOnePiece.Model.DataEntries
         private const string Space = " ";
         private const string DataSource = "data-source";
 
+        private const int ChapterDemaloBlack = 598;
+
         /// <summary>Percentage of advencement for loading characters.</summary>
         private int _countPercentage;
 
@@ -88,7 +90,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
                 var chapterString = DataControl.ExtractPattern(characterData, FilterChapter);
                 var chapter = !string.IsNullOrEmpty(chapterString) ? int.Parse(chapterString) : throw new InvalidOperationException(ExceptionMessageChapter);
                 if (characterName.Equals("Demalo Black", StringComparison.Ordinal))
-                    chapter = 598;
+                    chapter = ChapterDemaloBlack;
 
                 var pictureElements = doc.DocumentNode.SelectNodes(FilterPicture);
 
