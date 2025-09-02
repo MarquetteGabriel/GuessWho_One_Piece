@@ -9,7 +9,7 @@ namespace GuessWhoOnePiece.Model
 {
     public static partial class Regexs
     {
-        [GeneratedRegex(@"Prime\s:(.*?)(Statut|Anniversaire|Âge)")]
+        [GeneratedRegex(@"Prime\s*:(.*?)(?=(Statut|Anniversaire|Âge|$))")]
         public static partial Regex ExtractPatternBountyRegex();
 
         [GeneratedRegex(@"\[\d+\]")]

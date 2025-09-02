@@ -6,6 +6,7 @@
 using GuessWhoOnePiece.Model.Characters;
 using GuessWhoOnePiece.Model.CsvManager;
 using GuessWhoOnePiece.Model.DataEntries.Picture;
+using GuessWhoOnePiece.Model.Resources;
 using HtmlAgilityPack;
 using System;
 using System.Linq;
@@ -28,6 +29,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
         private const string OccupationValue = "occupation";
         private const string AffiliationValue = "affiliation";
         private const string Dead = "Décédé";
+        private const string Death = "Mort";
 
         private const string ClassCharacterData = "pi-item pi-group pi-border-color";
         private const string ClassFruit = "portable-infobox pi-background pi-border-color pi-theme-char pi-layout-default";
@@ -38,7 +40,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
         private const string FilterDevilFruit = $"//*[contains(@class, '{ClassFruit}')]";
         private const string FilterPicture = $"//*[contains(@class, 'image')]//a";
         private const string FilterBounty = $"//*[contains(@class, '{ClassType}')]";
-        private const string FilterAlived = @"Statut\s:(Vivant|Décédé)";
+        private const string FilterAlived = @"Statut\s:(Vivant|Décédé|Mort)";
         private const string FilterChapter = "Chapitre (\\d+)";
 
         // Exceptions Message.
@@ -51,6 +53,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
         private const string FruitDuDemon = "Fruit du Démon";
         private const string CelestialDragons = "Celestial Dragons";
         private const string Navy = "Navy";
+        private const string Vegapunk = "Vegapunk";
 
         private const string Space = " ";
         private const string DataSource = "data-source";
@@ -84,6 +87,8 @@ namespace GuessWhoOnePiece.Model.DataEntries
                 // Chapter Part.
                 var chapterString = DataControl.ExtractPattern(characterData, FilterChapter);
                 var chapter = !string.IsNullOrEmpty(chapterString) ? int.Parse(chapterString) : throw new InvalidOperationException(ExceptionMessageChapter);
+                if (characterName.Equals("Demalo Black", StringComparison.Ordinal))
+                    chapter = 598;
 
                 var pictureElements = doc.DocumentNode.SelectNodes(FilterPicture);
 
@@ -120,7 +125,8 @@ namespace GuessWhoOnePiece.Model.DataEntries
                 (var crew, var type) = GetCrewType(bountyTypeCrewElements, characterName);
 
                 // Alived part.
-                var alived = !DataControl.ExtractPattern(characterData, FilterAlived).Equals(Dead);
+                var alivedString = DataControl.ExtractPattern(characterData, FilterAlived);
+                var alived = !alivedString.Equals(Dead) && !alivedString.Equals(Death);
 
                 // Bounty part.
                 var bounty = DataControl.ExtractPatternBounty(characterData, type, characterName);
@@ -174,6 +180,8 @@ namespace GuessWhoOnePiece.Model.DataEntries
                 crew = CelestialDragons;
                 type = Navy;
             }
+            if (crew == Vegapunk)
+                crew = Crew.Navy;
 
             return (crew, type);
         }

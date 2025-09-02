@@ -1062,7 +1062,7 @@ namespace GuessWhoOnePiece.Tests.DataBase
 
             Skip.If(result == null, "Character not found");
             Assert.Equal("Shiki", result!.Name);
-            Assert.Equal(40, result.Age);
+            Assert.Equal(48, result.Age);
             Assert.True(result.Alive);
             Assert.True(result.DevilFruit);
             Assert.Equal(530, result.FirstAppearance);
@@ -1350,7 +1350,7 @@ namespace GuessWhoOnePiece.Tests.DataBase
 
             Skip.If(result == null, "Character not found");
             Assert.Equal("Shôjô", result!.Name);
-            Assert.Equal(25, result.Age);
+            Assert.Equal(27, result.Age);
             Assert.True(result.Alive);
             Assert.False(result.DevilFruit);
             Assert.Equal(226, result.FirstAppearance);
@@ -1998,13 +1998,13 @@ namespace GuessWhoOnePiece.Tests.DataBase
 
             Skip.If(result == null, "Character not found");
             Assert.Equal("Stansen", result!.Name);
-            Assert.Equal(30, result.Age);
+            Assert.Equal(81, result.Age);
             Assert.True(result.Alive);
             Assert.False(result.DevilFruit);
-            Assert.Equal(77, result.FirstAppearance);
-            Assert.Equal(Crew.Citizen, result.Crew);
-            Assert.Equal("0", result.Bounty);
-            Assert.Equal("Citizen", result.Type);
+            Assert.Equal(500, result.FirstAppearance);
+            Assert.Equal(Crew.Pirate, result.Crew);
+            Assert.Equal(Unknown, result.Bounty);
+            Assert.Equal(Crew.Pirate, result.Type);
         }
 
         [SkippableFact]

@@ -27,6 +27,12 @@ namespace GuessWhoOnePiece.Model.DataEntries
                 return Crew.MugiwaraAllies;
             if (characterName.Equals("Magellan", StringComparison.Ordinal))
                 return Crew.ImpelDown;
+            if (characterName.Equals("Koala", StringComparison.Ordinal))
+                return Crew.RevolutionaryArmy;
+            if (characterName.Equals("Stansen", StringComparison.Ordinal))
+                return Crew.Pirate;
+            if (characterName.Equals("Barbe Brune", StringComparison.Ordinal))
+                return Crew.DoflamingoCrew;
 
             string crew = GetCrewMapping(ExtractPatternCrew(text));
 
@@ -187,7 +193,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
                 return Crew.BigMomCrew;
 
             if (BaroqueWorks.Contains(rawCrew))
-                return Crew .BaroqueWorks;
+                return Crew.BaroqueWorks;
 
             if (CrossGuild.Contains(rawCrew))
                 return Crew.CrossGuild;

@@ -1842,7 +1842,7 @@ namespace GuessWhoOnePiece.Tests.DataBase
             Assert.Equal(44, result.Age);
             Assert.True(result.Alive);
             Assert.False(result.DevilFruit);
-            Assert.Equal(2, result.FirstAppearance);
+            Assert.Equal(4, result.FirstAppearance);
             Assert.Equal(Crew.Navy, result.Crew);
             Assert.Equal("0", result.Bounty);
             Assert.Equal("Navy", result.Type);

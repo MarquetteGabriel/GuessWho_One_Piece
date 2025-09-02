@@ -26,7 +26,7 @@ namespace GuessWhoOnePiece.Model.DataEntries
         {
             "Marine", "Marines", " Marines", "Cipher Pol", "Souverain", "Conseil des 5 doyens", "CP-AIGIS0",
             "Gouvernement", "Impel", "Navy's Crew", "Juge", "Dragon Celestes", "CP9", "Seraphim", "CP6", "CP7", 
-            "Celestial Dragons", "Cinq Doyens"
+            "Celestial Dragons", "Cinq Doyens", "Vegapunk"
         };
 
         /// <summary>List of cases that are Revolutioanry.</summary>
