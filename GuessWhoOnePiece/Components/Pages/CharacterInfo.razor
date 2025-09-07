@@ -2,8 +2,15 @@
 @using GuessWhoOnePiece.Model.Characters
 @inject GuessWhoOnePiece.Model.CsvManager.IFileServiceReader FileServiceReader
 @inject GuessWhoOnePiece.Services.CurrentCharacterService CurrentCharacterService
+@inject NavigationManager Navigation
+@inject GuessWhoOnePiece.Services.IndexMenuService IndexMenuService
 
 <div class="character-info-page">
+    <div>
+        <button class="button-back" @onclick="OnBack">
+            <img src="icons/back.png" alt="button" style="width: 32px; height: 32px"/>
+        </button>
+    </div>
     <div>
     <div class="page-title">
         <h3 class="character-name-title">@Character.Name</h3>
