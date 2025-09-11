@@ -24,7 +24,7 @@ namespace GuessWhoOnePiece.Components.Layout
             else
                 LoadingService.Loading = true;
 
-            IndexMenuService.IndexMenu = Model.IndexMenuTabBar.Home;
+            IndexMenuService.IndexMenu = Model.IndexMenuTabBar.Game;
         }
     }
 }

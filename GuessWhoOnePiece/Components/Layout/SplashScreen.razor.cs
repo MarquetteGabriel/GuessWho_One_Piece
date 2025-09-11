@@ -33,7 +33,7 @@ namespace GuessWhoOnePiece.Components.Layout
             else
             {
                 LoadingService.Loading = false;
-                Navigation.NavigateTo("/home");
+                Navigation.NavigateTo("/game");
             }
 
             return base.OnInitializedAsync();
@@ -67,7 +67,7 @@ namespace GuessWhoOnePiece.Components.Layout
                     Preferences.Set("Updated", true);
                     LoadingService.Loading = false;
                     controlRoom = null;
-                    Navigation.NavigateTo("/home");
+                    Navigation.NavigateTo("/game");
                 });
             }
         }
