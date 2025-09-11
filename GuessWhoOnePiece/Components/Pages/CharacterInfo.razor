@@ -24,10 +24,10 @@
         <div class="character-infos">
             <h4><span class="label">Première apparition : </span>@Character.FirstAppearance</h4>
             <h4><span class="label">Prime : </span>@Character.Bounty</h4>
-            <h4><span class="label">En vie : </span>@Character.Alive</h4>
+            <h4><span class="label">En vie : </span>@(Character.Alive ? "En vie" : "Décédé")</h4>
             <h4><span class="label">Age : </span>@Character.Age</h4>
             <h4><span class="label">Type : </span>@Character.Type</h4>
-            <h4><span class="label">Fruit du Démon : </span>@Character.DevilFruit</h4>
+                <h4><span class="label">Fruit du Démon : </span>@(Character.DevilFruit ? "Possédé" : "Non Possédé")</h4>
             <h4><span class="label">Équipage : </span>@Character.Crew</h4>
         </div>
     </div>
