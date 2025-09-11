@@ -3,6 +3,18 @@
 
 <div class="tab-bar">
     <div class="nav-list">
+        <div class="nav-item">
+            <NavLink class="nav-link" href="characters" @onclick="() => ChangeActiveState(IndexMenuTabBar.Characters)">
+                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Characters)
+                {
+                <img class="nav-icon" src="icons/characters_icon_on.svg" alt=""/>
+                }
+                else
+                {
+                <img class="nav-icon" src="icons/characters_icon_off.svg" alt=""/>
+                }
+            </NavLink>
+        </div>
         @*
         <div class="nav-item">
            <NavLink class="nav-link" href="counter" @onclick="() => ChangeActiveState(IndexMenuTabBar.Daily)">
@@ -29,7 +41,7 @@
                 }
             </NavLink>
         </div>
-        <div class="nav-item">
+        @*<div class="nav-item">
             <NavLink class="nav-link" href="home" @onclick="() => ChangeActiveState(IndexMenuTabBar.Home)">
                 @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Home)
             {
@@ -40,22 +52,9 @@
                 <img class="nav-icon" src="icons/home_icon_off.svg" alt=""/>
             }
             </NavLink>
-        </div>
+        </div>*@
         <div class="nav-item">
-            <NavLink class="nav-link" href="characters" @onclick="() => ChangeActiveState(IndexMenuTabBar.Characters)">
-                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Characters)
-                {
-                <img class="nav-icon" src="icons/characters_icon_on.svg" alt=""/>
-                }
-                else
-                {
-                <img class="nav-icon" src="icons/characters_icon_off.svg" alt=""/>
-                }
-            </NavLink>
-        </div>
-        @*
-        <div class="nav-item">
-            <NavLink class="nav-link" href="weather" @onclick="() => ChangeActiveState(IndexMenuTabBar.Settings)">
+            <NavLink class="nav-link" href="settings" @onclick="() => ChangeActiveState(IndexMenuTabBar.Settings)">
                 @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Settings)
                 {
                 <img class="nav-icon" src="icons/settings_icon_on.svg" alt=""/>
@@ -66,6 +65,5 @@
                 }
             </NavLink>
         </div>
-        *@
     </div>
 </div>

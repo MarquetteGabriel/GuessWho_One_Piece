@@ -17,12 +17,6 @@ namespace GuessWhoOnePiece.Components.Pages
             StateHasChanged();
         }
 
-        private void OnHome()
-        {
-            MainLayout!.TabBarRef.ChangeActiveState(IndexMenuTabBar.Home);
-            Navigation.NavigateTo("/home");
-        }
-
         private void OnPlayAgain()
         {
             MainLayout!.TabBarRef.ChangeActiveState(IndexMenuTabBar.Game);
