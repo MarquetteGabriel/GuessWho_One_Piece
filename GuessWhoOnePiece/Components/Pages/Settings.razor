@@ -1,0 +1,15 @@
+﻿@page "/settings"
+@inject NavigationManager Navigation
+
+<div class="settings-page">
+    <div class="ratio-win-losses">
+        <h3>Victoires : @Wins</h3>
+    </div>
+
+    <div class="update-datas">
+        <div class="last-update">
+            <h4>Dernière mise à jour : @UpdateDate</h4>
+        </div>
+        <button class="btn-update-datas" @onclick="OnUpdateDatas">Mettre a jour les données</button>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿.update-datas {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-update-datas {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+h4 {
+    display: flex;
+    padding: 10px 20px;
+    margin: 8px 0;
+    text-align: center;
+    color: white;
+    transition: transform 0.2s ease;
+    font-size: 14px;
+}
+
+.ratio-win-losses {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-page {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.loading-bar {
+    width: 100%;
+    max-width: 600px;
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px -10px #fff;
+    position: relative;
+    justify-content: center;
+    height: 20px;
+}
+
+.progress {
+    display: flex;
+    height: 20px;
+    background: linear-gradient(to right, #1b31d4, #45c422);
+    width: 0;
+    animation: width 2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.progress-text {
+    display: flex;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    align-items: inherit;
+    justify-content: center;
+    position: relative;
+}
+
+h3 {
+    background-color: darkslategrey;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    font-size: 12px;
+}
