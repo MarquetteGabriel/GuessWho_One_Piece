@@ -23,6 +23,7 @@ namespace GuessWhoOnePiece.Components.Pages
         {
             Preferences.Set("Updated", false);
             Preferences.Set("UpdateDate", DateTime.Now.ToShortDateString());
+            LoadingService.Loading = true;
             MainLayout!.TabBarRef.ChangeActiveState(IndexMenuTabBar.Game);
             Navigation.NavigateTo("/loading");
         }
