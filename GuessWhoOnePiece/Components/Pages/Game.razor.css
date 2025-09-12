@@ -43,3 +43,16 @@
     justify-items: center;
 }
 
+.list-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+}
+
+.header {
+    color: white;
+    width: 110px;
+}
