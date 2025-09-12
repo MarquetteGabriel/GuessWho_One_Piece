@@ -18,7 +18,7 @@ namespace GuessWhoOnePiece.Model
         [GeneratedRegex(@"\d+")]
         public static partial Regex BountyValueRegex();
 
-        [GeneratedRegex(@"Âge(\s)?:(.*?)(Anniversaire|Taille|Voix)")]
+        [GeneratedRegex(@"Âge(\s)?:(.*?)(Anniversaire|Taille|Voix|Prime)")]
         public static partial Regex ExtractPatternAgeRegex();
 
         [GeneratedRegex(@"(\d+\s)?\d+(an)?(ans)?(\sans)?(\s\(espérance de vie)?(\s\(s'il était vivant\))?(\s\(estimation)?")]

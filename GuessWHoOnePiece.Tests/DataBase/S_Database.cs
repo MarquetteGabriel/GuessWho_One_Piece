@@ -604,14 +604,14 @@ namespace GuessWhoOnePiece.Tests.DataBase
         }
 
         [SkippableFact]
-        public async Task Scopper_Gabban()
+        public async Task Scopper_Gaban()
         {
-            var character = "Scopper Gabban";
+            var character = "Scopper Gaban";
             var characterLink = ControlRoom.SetCharacterLink(character); var mockFileService = new Mock<IFileServiceReader>(); mockFileService.Setup(pp => pp.GetCsvPath).Returns(LocalPath + "Characters.csv"); 
             var result = await controlRoom.DataForCharacter(characterLink, character, mockFileService.Object);
 
             Skip.If(result == null, "Character not found");
-            Assert.Equal("Scopper Gabban", result!.Name);
+            Assert.Equal("Scopper Gaban", result!.Name);
             Assert.Equal(80, result.Age);
             Assert.True(result.Alive);
             Assert.False(result.DevilFruit);
