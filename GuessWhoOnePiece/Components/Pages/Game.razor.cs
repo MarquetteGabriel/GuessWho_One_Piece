@@ -6,6 +6,7 @@
 using GuessWhoOnePiece.Model.CsvManager;
 using GuessWhoOnePiece.ViewModel;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Maui.Storage;
 
 namespace GuessWhoOnePiece.Components.Pages;
 
@@ -29,6 +30,8 @@ public partial class Game : ComponentBase
         if (isVictory)
         {
             CurrentCharacterService.CurrentCharacter = character;
+            int wins = Preferences.Get("Wins", 0);
+            Preferences.Set("Wins", wins + 1);
             Navigation.NavigateTo("/victory");
         }
     }

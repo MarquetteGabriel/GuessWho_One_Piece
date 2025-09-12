@@ -50,10 +50,8 @@ namespace GuessWhoOnePiece.Model
 
     public enum IndexMenuTabBar
     {
-        Daily = 1,
+        Characters = 1,
         Game = 2,
-        Home = 3,
-        Characters = 4,
-        Settings = 5,
+        Settings = 3,
     }
 }
