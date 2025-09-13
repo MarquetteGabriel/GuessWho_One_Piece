@@ -53,13 +53,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Remove="Resources\Images\loading.jpg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="Resources\Images\loading.jpg">
+	  <EmbeddedResource Update="Resources\Images\splashscreen.jpg">
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-	  </Content>
+	  </EmbeddedResource>
 	</ItemGroup>
 </Project>
