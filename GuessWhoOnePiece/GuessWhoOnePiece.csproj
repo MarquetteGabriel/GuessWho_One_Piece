@@ -30,7 +30,7 @@
 
     <ItemGroup>
         <!-- App Icon -->
-        <MauiIcon Include="Resources\AppIcon\logo_guesswho_one_piece.svg" />
+        <MauiIcon Include="Resources\AppIcon\logo_guess_who_one_piece.png" />
 
         <!-- Splash Screen -->
         <MauiSplashScreen Include="Resources\Splash\disc0555.jpg" />
