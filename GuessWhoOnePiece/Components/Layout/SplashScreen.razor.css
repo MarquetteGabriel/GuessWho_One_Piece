@@ -3,6 +3,29 @@
    Author: Gabriel Marquette
 */
 
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.splash-screen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 25;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    position: fixed;
+}
+
 .loading-bar {
     width: 100%;
     max-width: 600px;
@@ -18,7 +41,7 @@
 .progress {
     display: flex;
     height: 20px;
-    background: linear-gradient(to right, #1b31d4, #45c422);
+    background: linear-gradient(to right, #d4ff00, #ff0000);
     width: 0;
     animation: width 2s ease-in-out;
     align-items: center;

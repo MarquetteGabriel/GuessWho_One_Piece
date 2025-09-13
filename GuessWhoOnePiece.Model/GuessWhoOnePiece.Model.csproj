@@ -51,4 +51,15 @@
 	<ItemGroup>
 		<EmbeddedResource Include="Resources\Images\*" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Remove="Resources\Images\loading.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Resources\Images\loading.jpg">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
 </Project>
