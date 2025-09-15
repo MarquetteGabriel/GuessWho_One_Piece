@@ -14,15 +14,15 @@ namespace GuessWhoOnePiece.Components.Pages
 {
     public partial class Settings
     {
-        private string UpdateDate = Preferences.Get("UpdateDate", DateTime.Now.ToShortDateString());
-        private int Wins = Preferences.Get("Wins", 0);
+        private readonly string UpdateDate = Preferences.Get("UpdateDate", DateTime.UtcNow.ToShortDateString());
+        private readonly int Wins = Preferences.Get("Wins", 0);
 
         [CascadingParameter(Name = "MainLayout")] private MainLayout? MainLayout { get; set; }
 
         private void OnUpdateDatas()
         {
             Preferences.Set("Updated", false);
-            Preferences.Set("UpdateDate", DateTime.Now.ToShortDateString());
+            Preferences.Set("UpdateDate", DateTime.UtcNow.ToShortDateString());
             LoadingService.Loading = true;
             MainLayout!.TabBarRef.ChangeActiveState(IndexMenuTabBar.Game);
             Navigation.NavigateTo("/loading");
