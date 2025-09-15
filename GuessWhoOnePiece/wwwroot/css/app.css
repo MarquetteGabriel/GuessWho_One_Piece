@@ -41,6 +41,23 @@ h1:focus {
     color: #e50000;
 }
 
+.custom-loader {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
