@@ -22,7 +22,7 @@ namespace GuessWhoOnePiece.Tests.DataEntries
             var result = await CharacterNameListManager.ReceivedCharactersList();
 
             Assert.NotNull(result);
-            Assert.Equal(1386, result.Count);
+            Assert.Equal(1520, result.Count);
         }
 
         #region LevenshteinDistance Tests

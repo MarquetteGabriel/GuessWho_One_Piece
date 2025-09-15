@@ -42,7 +42,7 @@ namespace GuessWhoOnePiece.Tests.CsvManager
 
             // Assert
             Assert.NotNull(result);
-            Assert.Equal(491, result.Count);
+            Assert.Equal(492, result.Count);
         }
 
         [Fact]
@@ -72,7 +72,7 @@ namespace GuessWhoOnePiece.Tests.CsvManager
             var result = await ReceiveDataCsv.ReceiveCharacterInfoList(mockFileService.Object);
             
             Assert.NotNull(result);
-            Assert.Equal(491, result.Count);
+            Assert.Equal(492, result.Count);
         }
     }
 }
