@@ -1,4 +1,9 @@
-﻿using Microsoft.Maui.Storage;
+﻿// <copyright file="FileServiceReader.cs">
+// Copyright (c) 2025 All Rights Reserved. 
+// </copyright>
+// <author>Gabriel Marquette</author>
+
+using Microsoft.Maui.Storage;
 using System.IO;
 
 namespace GuessWhoOnePiece.Model.CsvManager

@@ -1,4 +1,9 @@
-﻿.victory-title {
+﻿/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+.victory-title {
     background: linear-gradient(45deg, gold, orange, crimson);
     -webkit-background-clip: text;
     color: transparent;

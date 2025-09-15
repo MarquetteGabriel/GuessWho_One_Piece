@@ -1,4 +1,4 @@
-// <copyright file="Weather.razor.cs">
+// <copyright file="Settings.razor.cs">
 // Copyright (c) 2025 All Rights Reserved. 
 // </copyright>
 // <author>Gabriel Marquette</author>

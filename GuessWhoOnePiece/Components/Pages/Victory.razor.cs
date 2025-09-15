@@ -1,3 +1,8 @@
+// <copyright file="Victory.razor.cs">
+// Copyright (c) 2025 All Rights Reserved. 
+// </copyright>
+// <author>Gabriel Marquette</author>
+
 using GuessWhoOnePiece.Components.Layout;
 using GuessWhoOnePiece.Model;
 using GuessWhoOnePiece.Model.Characters;

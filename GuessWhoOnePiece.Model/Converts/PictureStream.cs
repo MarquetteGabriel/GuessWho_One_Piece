@@ -1,4 +1,9 @@
-﻿using System.IO;
+﻿// <copyright file="PictureStream.cs">
+// Copyright (c) 2025 All Rights Reserved. 
+// </copyright>
+// <author>Gabriel Marquette</author>
+
+using System.IO;
 using System.Reflection;
 
 namespace GuessWhoOnePiece.Model.Converts

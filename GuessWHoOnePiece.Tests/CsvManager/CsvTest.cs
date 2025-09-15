@@ -1,4 +1,9 @@
-﻿using GuessWhoOnePiece.Model.CsvManager;
+﻿// <copyright file="CsvTest.cs">
+// Copyright (c) 2025 All Rights Reserved. 
+// </copyright>
+// <author>Gabriel Marquette</author>
+
+using GuessWhoOnePiece.Model.CsvManager;
 using Moq;
 using System.IO;
 using System.Threading.Tasks;

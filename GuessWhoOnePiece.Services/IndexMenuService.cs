@@ -1,4 +1,9 @@
-﻿using GuessWhoOnePiece.Model;
+﻿// <copyright file="IndexMenuService.cs">
+// Copyright (c) 2025 All Rights Reserved. 
+// </copyright>
+// <author>Gabriel Marquette</author>
+
+using GuessWhoOnePiece.Model;
 using System;
 
 namespace GuessWhoOnePiece.Services

@@ -1,4 +1,4 @@
-// <copyright file="Routes.razor.cs">
+// <copyright file="MainLayout.razor.cs">
 // Copyright (c) 2025 All Rights Reserved. 
 // </copyright>
 // <author>Gabriel Marquette</author>
