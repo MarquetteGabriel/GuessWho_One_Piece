@@ -1,0 +1,58 @@
+﻿/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+.game-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 80px;
+    padding-top: 60px;
+}
+
+.top-bar-menu {
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    position: fixed;
+    top: 10px;
+    z-index: 900;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    background-color: hsl(225, 12%, 12%);
+    width: 88%;
+    margin-inline: auto;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
+    border-radius: 4rem;
+    place-content: center;
+}
+
+.text-entry {
+    width: 88%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.list-answer {
+    overflow-y: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.list-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+}
+
+.header {
+    color: white;
+    width: 110px;
+}

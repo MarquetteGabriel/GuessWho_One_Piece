@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApooCrew" xml:space="preserve">
+    <value>L'Équipage du On-Air</value>
+  </data>
+  <data name="ArlongCrew" xml:space="preserve">
+    <value>L'Équipage d'Arlong</value>
+  </data>
+  <data name="Assassin" xml:space="preserve">
+    <value>Assassin</value>
+  </data>
+  <data name="Bandit" xml:space="preserve">
+    <value>Bandit</value>
+  </data>
+  <data name="BaroqueWorks" xml:space="preserve">
+    <value>Baroque Works</value>
+  </data>
+  <data name="BegeCrew" xml:space="preserve">
+    <value>L'Équipage du Fire Tank</value>
+  </data>
+  <data name="BigMomCrew" xml:space="preserve">
+    <value>L'Équipage de Big Mom</value>
+  </data>
+  <data name="BlackCatCrew" xml:space="preserve">
+    <value>L'Équipage du Chat Noir</value>
+  </data>
+  <data name="BluejamCrew" xml:space="preserve">
+    <value>L'Équipage de Bluejam</value>
+  </data>
+  <data name="BonneyCrew" xml:space="preserve">
+    <value>L'Équipage de Bonney</value>
+  </data>
+  <data name="CaribouCrew" xml:space="preserve">
+    <value>L'Équipage de Caribou</value>
+  </data>
+  <data name="CelestialDragons" xml:space="preserve">
+    <value>Celestial Dragons</value>
+  </data>
+  <data name="CinqDoyens" xml:space="preserve">
+    <value>Cinq Doyens</value>
+  </data>
+  <data name="CipherPol" xml:space="preserve">
+    <value>Cipher Pol</value>
+  </data>
+  <data name="Citizen" xml:space="preserve">
+    <value>Citizen</value>
+  </data>
+  <data name="CrossGuild" xml:space="preserve">
+    <value>Cross Guild</value>
+  </data>
+  <data name="DoflamingoCrew" xml:space="preserve">
+    <value>L'Équipage de Don Quichotte Doflamingo</value>
+  </data>
+  <data name="DonKriegCrew" xml:space="preserve">
+    <value>L'Armada Pirate de Don Krieg</value>
+  </data>
+  <data name="EnerCrew" xml:space="preserve">
+    <value>Clan d'Ener</value>
+  </data>
+  <data name="FalseMugiwaraCrew" xml:space="preserve">
+    <value>Faux Équipage du Chapeau de Paille</value>
+  </data>
+  <data name="FoxyCrew" xml:space="preserve">
+    <value>L'Équipage de Foxy</value>
+  </data>
+  <data name="GiantsCrew" xml:space="preserve">
+    <value>L'Équipage des Géants</value>
+  </data>
+  <data name="GouvernementMondial" xml:space="preserve">
+    <value>Gouvernement Mondial</value>
+  </data>
+  <data name="HawkinsCrew" xml:space="preserve">
+    <value>L'Équipage de Hawkins</value>
+  </data>
+  <data name="ImpelDown" xml:space="preserve">
+    <value>Impel Down</value>
+  </data>
+  <data name="KaidoCrew" xml:space="preserve">
+    <value>L'Équipage aux Cent Bêtes</value>
+  </data>
+  <data name="KidCrew" xml:space="preserve">
+    <value>L'Équipage de Kid</value>
+  </data>
+  <data name="Kujas" xml:space="preserve">
+    <value>Kujas</value>
+  </data>
+  <data name="LawCrew" xml:space="preserve">
+    <value>L'Équipage du Heart</value>
+  </data>
+  <data name="MountainBandit" xml:space="preserve">
+    <value>Bandits des montagnes</value>
+  </data>
+  <data name="MugiwaraAllies" xml:space="preserve">
+    <value>Allié de L'Équipage du Chapeau de Paille</value>
+  </data>
+  <data name="MugiwaraCrew" xml:space="preserve">
+    <value>L'Équipage du Chapeau de Paille</value>
+  </data>
+  <data name="Navy" xml:space="preserve">
+    <value>Navy's Crew</value>
+  </data>
+  <data name="NeoMads" xml:space="preserve">
+    <value>Néo Mads</value>
+  </data>
+  <data name="NewComerLand" xml:space="preserve">
+    <value>New Comer Land</value>
+  </data>
+  <data name="NewFishmenCrew" xml:space="preserve">
+    <value>L'Équipage des Nouveaux Hommes-Poissons</value>
+  </data>
+  <data name="NewgateCrew" xml:space="preserve">
+    <value>L'Équipage de Barbe Blanche</value>
+  </data>
+  <data name="Pirate" xml:space="preserve">
+    <value>Pirate</value>
+  </data>
+  <data name="PrimatesCrew" xml:space="preserve">
+    <value>Ligue des Primates</value>
+  </data>
+  <data name="RevolutionaryArmy" xml:space="preserve">
+    <value>Revolutionary's Army</value>
+  </data>
+  <data name="RogerCrew" xml:space="preserve">
+    <value>L'Équipage des Pirates de Roger</value>
+  </data>
+  <data name="RollingCrew" xml:space="preserve">
+    <value>L'Équipage du Rolling</value>
+  </data>
+  <data name="Seraphim" xml:space="preserve">
+    <value>Seraphim</value>
+  </data>
+  <data name="ShanksCrew" xml:space="preserve">
+    <value>L'Équipage du Roux</value>
+  </data>
+  <data name="ShikiCrew" xml:space="preserve">
+    <value>L'Équipage du Lion d'Or</value>
+  </data>
+  <data name="SunPiratesCrew" xml:space="preserve">
+    <value>L'Équipage des Pirates du Soleil</value>
+  </data>
+  <data name="TeachCrew" xml:space="preserve">
+    <value>L'Équipage de Barbe Noire</value>
+  </data>
+  <data name="ThrillerBark" xml:space="preserve">
+    <value>Thriller Bark</value>
+  </data>
+  <data name="UrougeCrew" xml:space="preserve">
+    <value>L'Équipage des Moines Dépravés</value>
+  </data>
+  <data name="WapolCrew" xml:space="preserve">
+    <value>L’Équipage de Wapol</value>
+  </data>
+  <data name="WeebleCrew" xml:space="preserve">
+    <value>Edward Weeble</value>
+  </data>
+  <data name="ZoCrew" xml:space="preserve">
+    <value>Zo</value>
+  </data>
+</root>

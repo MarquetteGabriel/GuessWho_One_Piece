@@ -1,0 +1,20 @@
+﻿@page "/home"
+@using GuessWhoOnePiece.Model.CsvManager
+@using GuessWhoOnePiece.Model.DataEntries
+@using System.Diagnostics
+@using System.Threading
+@inject IJSRuntime JS
+@inject GuessWhoOnePiece.Model.CsvManager.IFileServiceReader FileServiceReader
+@inject GuessWhoOnePiece.Services.CurrentCharacterService CurrentCharacterService
+@inject NavigationManager Navigation
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button @onclick="@OnClickChargement">Data</button>
+
+<div>
+    <button @onclick="@OnShowCharacter">Show Character</button>
+    <label>@_value</label>
+</div>

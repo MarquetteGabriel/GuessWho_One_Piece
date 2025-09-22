@@ -1,0 +1,16 @@
+﻿@page "/"
+@page "/loading"
+@inject GuessWhoOnePiece.Services.LoadingService LoadingService
+@inject NavigationManager Navigation
+@inject GuessWhoOnePiece.Model.CsvManager.IFileServiceReader FileServiceReader
+
+<div class="background-image">
+    <Picture PicturePath="splashscreen.jpg" />
+</div>
+
+<div class="splash-screen">
+    <div class="loading-bar">
+        <div class="progress" id="progressBar" style="width:@ProgressValue%"></div>
+        <span class="progress-text" id="progressText">@ProgressValue%</span>
+    </div>
+</div>

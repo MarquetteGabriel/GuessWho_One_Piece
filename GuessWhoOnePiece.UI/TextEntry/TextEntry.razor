@@ -1,0 +1,19 @@
+﻿<div>
+    <input class="entry" type="text" @bind="SearchText" @oninput="OnInput" @onkeydown="OnKeyDown" placeholder="Enter character...">
+
+    @if (WithAutoComplete)
+    {
+        @if (_filteredItems.Any())
+        {
+            <ul class="list">
+                @foreach (var item in _filteredItems)
+                {
+                    <li class="dropdown-item-answer" @onclick="(() => SelectItem(item))">@item</li>
+                }
+            </ul>
+        }
+    }
+
+</div>
+
+

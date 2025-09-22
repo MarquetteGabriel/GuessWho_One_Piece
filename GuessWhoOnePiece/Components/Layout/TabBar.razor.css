@@ -1,0 +1,49 @@
+﻿/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+:root {
+    --black-color: hsl(225, 12%, 12%);
+    --first-color: hsl(225, 95%, 56%);
+    --white-color: hsl(0, 0%, 100%);
+    --text-color: hsl(225, 8%, 65%);
+    --body-color: hsl(225, 100%, 99%);
+    
+    --z-fixed: 100;
+    --z-tooltip: 10;
+}
+
+.tab-bar {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    background-color: hsl(225, 12%, 12%);
+    width: 88%;
+    margin-inline: auto;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
+    border-radius: 4rem;
+    place-content: center;
+    z-index: 999;
+}
+
+.nav-list {
+    display: flex;
+    place-content: center space-between;
+}
+
+.nav-item {
+    color: hsl(225, 8%, 65%);
+    font-size: 1.5rem;
+    transition: color .4s;
+}
+
+.nav-icon {
+    height: 1fr;
+    width: 20px;
+}
+
+.nav-item:hover {
+    color: hsl(0, 0%, 100%);
+}

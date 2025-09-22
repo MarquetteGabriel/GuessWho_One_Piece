@@ -1,0 +1,23 @@
+/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+.page {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+main {
+    flex: 1;
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+    
+    
+}

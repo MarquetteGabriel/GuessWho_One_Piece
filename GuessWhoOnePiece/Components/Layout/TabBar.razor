@@ -1,0 +1,69 @@
+﻿@using GuessWhoOnePiece.Model
+@inject GuessWhoOnePiece.Services.IndexMenuService IndexMenuService
+
+<div class="tab-bar">
+    <div class="nav-list">
+        <div class="nav-item">
+            <NavLink class="nav-link" href="characters" @onclick="() => ChangeActiveState(IndexMenuTabBar.Characters)">
+                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Characters)
+                {
+                <img class="nav-icon" src="icons/characters_icon_on.svg" alt=""/>
+                }
+                else
+                {
+                <img class="nav-icon" src="icons/characters_icon_off.svg" alt=""/>
+                }
+            </NavLink>
+        </div>
+        @*
+        <div class="nav-item">
+           <NavLink class="nav-link" href="counter" @onclick="() => ChangeActiveState(IndexMenuTabBar.Daily)">
+                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Daily)
+                {
+                    <img class="nav-icon" src="icons/today_icon_on.svg" alt=""/>
+                }
+                else
+                {
+                    <img class="nav-icon" src="icons/today_icon_off.svg" alt=""/>
+                }
+            </NavLink>
+        </div>
+        *@
+        <div class="nav-item">
+            <NavLink class="nav-link" href="game" @onclick="() => ChangeActiveState(IndexMenuTabBar.Game)">
+                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Game)
+                {
+                    <img class="nav-icon" src="icons/infinity_icon_on.svg" alt=""/>
+                }
+                else
+                {
+                    <img class="nav-icon" src="icons/infinity_icon_off.svg" alt=""/>
+                }
+            </NavLink>
+        </div>
+        @*<div class="nav-item">
+            <NavLink class="nav-link" href="home" @onclick="() => ChangeActiveState(IndexMenuTabBar.Home)">
+                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Home)
+            {
+                <img class="nav-icon" src="icons/home_icon_on.svg" alt=""/>
+            }
+            else
+            {
+                <img class="nav-icon" src="icons/home_icon_off.svg" alt=""/>
+            }
+            </NavLink>
+        </div>*@
+        <div class="nav-item">
+            <NavLink class="nav-link" href="settings" @onclick="() => ChangeActiveState(IndexMenuTabBar.Settings)">
+                @if (IndexMenuService.IndexMenu == IndexMenuTabBar.Settings)
+                {
+                <img class="nav-icon" src="icons/settings_icon_on.svg" alt=""/>
+                }
+                else
+                {
+                <img class="nav-icon" src="icons/settings_icon_off.svg" alt=""/>
+                }
+            </NavLink>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿extensions: .cs .java
+// <copyright file="%FileName%">
+// Copyright (c) %CurrentYear% All Rights Reserved. 
+// </copyright>
+// <author>Gabriel Marquette</author>
+
+extensions: .css .scss .js
+/* 
+   Copyright (c) %CurrentYear% All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+extensions: .html
+<!-- 
+   Copyright (c) %CurrentYear% All Rights Reserved.
+   Author: Gabriel Marquette
+-->
