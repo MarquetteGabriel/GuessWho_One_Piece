@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.guesswhoonepiece">
+	<!-- Permissions nécessaires -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- Déclaration de l'application -->
+	<application android:allowBackup="true" android:icon="@mipmap/logo_guess_who_one_piece" android:supportsRtl="true" android:label="GuessWho One Piece" android:networkSecurityConfig="@xml/network_security_config">
+		<!-- Déclaration de la configuration WebView -->
+		<!-- Le WebView sera configuré dans le code C# Blazor/Android -->
+	</application>
+</manifest>

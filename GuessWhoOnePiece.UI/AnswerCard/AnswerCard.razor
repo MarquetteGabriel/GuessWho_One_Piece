@@ -1,0 +1,21 @@
+﻿@using GuessWhoOnePiece.UI.Picture
+
+<div id="answerCard" class="answer-circle @DefineColor()">
+    @if (!string.IsNullOrEmpty(AnswerImage) && string.IsNullOrEmpty(AnswerText))
+    {
+        <div class="answer-picture">
+            <Picture PicturePath="@AnswerImage" />
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(AnswerImage))
+    {
+        <div class="answer-picture-shared">
+            <Picture PicturePath="@AnswerImage" />
+        </div>
+        <label class="answer-text">@AnswerText</label>
+    }
+    else 
+    {
+        <label class="answer-text">@AnswerText</label>
+    }
+</div>

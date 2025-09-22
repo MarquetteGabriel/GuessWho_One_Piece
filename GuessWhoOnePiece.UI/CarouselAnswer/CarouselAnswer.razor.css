@@ -1,0 +1,19 @@
+﻿/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+.answer-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-left: 10px;
+    display: inline;
+}

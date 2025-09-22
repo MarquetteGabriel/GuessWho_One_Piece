@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\GuessWhoOnePiece\GuessWhoOnePiece.licenseheader" Link="GuessWhoOnePiece.licenseheader" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.100" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GuessWhoOnePiece.Model\GuessWhoOnePiece.Model.csproj" />
+    <ProjectReference Include="..\GuessWhoOnePiece.Services\GuessWhoOnePiece.Services.csproj" />
+  </ItemGroup>
+</Project>

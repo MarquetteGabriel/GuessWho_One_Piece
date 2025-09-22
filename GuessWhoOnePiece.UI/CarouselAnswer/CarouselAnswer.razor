@@ -1,0 +1,35 @@
+﻿@using GuessWhoOnePiece.Model.Characters
+@using GuessWhoOnePiece.Model.AnswerModel
+@using GuessWhoOnePiece.UI.AnswerCard
+
+<div class="answer">
+    <div class="answer-list">
+        <div class="answers">
+            <AnswerCard AnswerText="@Character?.Name" AnswerImage="@Character?.AnswerImageLink?.Name" AnswerState="@Character?.AnswerStateList?.Name"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerImage="@Character?.Picture" AnswerText="" AnswerState="@Character?.AnswerStateList?.Name"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@Character?.Age.ToString()" AnswerImage="@Character?.AnswerImageLink?.Age" AnswerState="@Character?.AnswerStateList?.Age"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@(Character!.DevilFruit ? "Possédé" : "Non Possédé")" AnswerImage="@Character?.AnswerImageLink?.DevilFruit" AnswerState="@Character?.AnswerStateList?.DevilFruit"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@Character?.Bounty" AnswerImage="@Character?.AnswerImageLink?.Bounty" AnswerState="@Character?.AnswerStateList?.Bounty"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@(Character!.Alive ? "En vie" : "Décédé")" AnswerImage="@Character?.AnswerImageLink?.Alive" AnswerState="@Character?.AnswerStateList?.Alive"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@Character?.Type" AnswerImage="@Character?.AnswerImageLink?.Type" AnswerState="@Character?.AnswerStateList?.Type"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@Character?.FirstAppearance.ToString()" AnswerImage="@Character?.AnswerImageLink?.FirstAppearance" AnswerState="@Character?.AnswerStateList?.FirstAppearance"></AnswerCard>
+        </div>
+        <div class="answers">
+            <AnswerCard AnswerText="@Character?.Crew" AnswerImage="@Character?.AnswerImageLink?.Crew" AnswerState="@Character?.AnswerStateList?.Crew"></AnswerCard>
+        </div>
+    </div>
+</div>

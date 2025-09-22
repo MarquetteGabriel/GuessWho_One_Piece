@@ -1,0 +1,34 @@
+﻿@page "/victory"
+@inject GuessWhoOnePiece.Services.CurrentCharacterService CurrentCharacterService
+@inject NavigationManager Navigation
+@inject GuessWhoOnePiece.Services.IndexMenuService IndexMenuService
+
+<div class="victory-page">
+
+    <div class="page-title">
+        <h1 class="victory-title">Victory !</h1>
+        <h3 class="character-name-title">@Character?.Name</h3>
+    </div>
+
+    <div class="character-details">
+        <div class="picture-character">
+            <Picture PicturePath="@Character?.Picture" />
+        </div>
+
+        <div class="character-infos">
+            <h4><span class="label">Première apparition : </span>@Character?.FirstAppearance</h4>
+            <h4><span class="label">Prime : </span>@Character?.Bounty</h4>
+            <h4><span class="label">En vie : </span>@Character?.Alive</h4>
+            <h4><span class="label">Age : </span>@Character?.Age</h4>
+            <h4><span class="label">Type : </span>@Character?.Type</h4>
+            <h4><span class="label">Fruit du Démon : </span>@Character?.DevilFruit</h4>
+            <h4><span class="label">Équipage : </span>@Character?.Crew</h4>
+        </div>
+    </div>
+
+    <div class="buttons-navigation">
+        <button @onclick="OnPlayAgain">Play Again</button>
+    </div>
+</div>
+
+

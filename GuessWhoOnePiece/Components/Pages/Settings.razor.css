@@ -1,0 +1,60 @@
+﻿/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+.update-datas {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-update-datas {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+h4 {
+    display: flex;
+    padding: 10px 20px;
+    margin: 8px 0;
+    text-align: center;
+    color: white;
+    transition: transform 0.2s ease;
+    font-size: 14px;
+}
+
+.ratio-win-losses {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-page {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+h3 {
+    background-color: darkslategrey;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    font-size: 12px;
+}

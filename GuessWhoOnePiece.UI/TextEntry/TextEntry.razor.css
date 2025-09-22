@@ -1,0 +1,31 @@
+﻿/* 
+   Copyright (c) 2025 All Rights Reserved. 
+   Author: Gabriel Marquette
+*/
+
+.list {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.entry {
+    border: unset;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9em;
+}
+
+.dropdown-item-answer {
+    list-style-type: none;
+    margin-left: unset;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.4em;
+    box-sizing: border-box;
+}

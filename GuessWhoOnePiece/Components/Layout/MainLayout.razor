@@ -1,0 +1,22 @@
+﻿@inherits LayoutComponentBase
+@inject GuessWhoOnePiece.Services.LoadingService LoadingService
+@inject GuessWhoOnePiece.Services.IndexMenuService IndexMenuService
+
+<BackgroundPicture/>
+
+<CascadingValue Value="this" Name="MainLayout">
+    <div class="page">
+        @if(!LoadingService.Loading)
+        {
+            <div class="bottom-bar">
+                <TabBar @ref="TabBarRef"/>
+            </div>
+        }
+
+        <main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+</CascadingValue>
